@@ -26,7 +26,7 @@
 
 	<nav>
         <a href="#" onClick="document.getElementById('top').scrollIntoView();">GCP</a>
-        <a onClick="document.getElementById('2nd').scrollIntoView();">Offerings</a>
+        <a onClick="document.getElementById('1').scrollIntoView();">Offerings</a>
         <a onClick="document.getElementById('3rd').scrollIntoView();">Pricing</a>
         <a onClick="document.getElementById('4th').scrollIntoView();">Differentiators</a>
         <a onClick="document.getElementById('5th').scrollIntoView();">Datadog</a>
@@ -52,185 +52,210 @@
                 <p>GCP Native cloud monitoring platform</p>
                 <br>
                 
-                <div id="explorebutton" onClick="document.getElementById('2nd').scrollIntoView();"></div>
+                <div id="explorebutton" onClick="document.getElementById('1').scrollIntoView();"></div>
             </div>
         </div>
     </div>
+   
     
-    <div class="container2" id="2nd">
-        <video autoplay muted loop>
-            <source src="{{ url_for('static', filename='GCP5.mp4') }}" type="video/mp4">
-        </video>
-
-        <div class="wrapper">
-            <h1> Offerings </h1>
-            <div class="cols">
-                      <div class="col" ontouchstart="this.classList.toggle('hover');">
-                          <div class="containerflip">
-                              <div class="front" style="background-image: url(https://cdn.dribbble.com/users/1514097/screenshots/3451172/dashboard-icon.gif)">
-                                  <div class="inner">
-                                      <p>Metrics</p>
-                        <span>Monitoring</span>
-                                  </div>
-                              </div>
-                              <div class="back">
-                                  <div class="inner">
-                                    <h2>Uptime Checks</h2>
-                                    <p>
-                                        Health and latency of services, web pages, APIs
-                                    </p>
-                                    <h2>Custom Metrics</h2>
-                                    <p>
-                                        Application specific metrics (count of returning users
-                                    </p>
-                                    <h2>Log-based Metrics</h2>
-                                    <p>
-                                        Content count of certain log entries (count of error logs)
-                                    </p>
-                                    <h2>Agent Metrics</h2>
-                                    <p>
-                                        Installed onto VMs (AWS as well) for system level metrics.
-                                    </p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col" ontouchstart="this.classList.toggle('hover');">
-                          <div class="containerflip">
-                              <div class="front" style="background-image: url(https://i.pinimg.com/originals/cc/00/b4/cc00b40751911eb1a4708af4ca90faea.gif)">
-                                  <div class="inner">
-                                      <p>Alerting</p>
-                        <span>GCP</span>
-                                  </div>
-                              </div>
-                              <div class="back">
-                                  <div class="inner">
-                                        <br>
-                                        <h2>Alert Policies</h2>
-                                        <p>
-                                            Tied closely to metrics. A set of conditions that will generate a notification whenever that event is triggered. 
-                                            The notification can contain documentation and metadata to provide additional info.
-
-                                            Email, PagerDuty, SMS, Hipchat, Webhooks, GCP Mobile APP
-                                        </p>
-                                        <h2>Error Reporting</h2>
-                                        <p>
-                                            Groups together error and critical level errors from application logs. Sends a summary of 
-                                            what, where, when, and why an incident occurred. 
-
-                                        </p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col" ontouchstart="this.classList.toggle('hover');">
-                          <div class="containerflip">
-                              <div class="front" style="background-image: url(https://i.pinimg.com/originals/c6/1c/d2/c61cd23ff606ef7b7599ccf2c8dda159.gif)">
-                                  <div class="inner">
-                                      <p>Debugger</p>
-                        <span>GCP</span>
-                                  </div>
-                              </div>
-                              <div class="back">
-                                  <div class="inner">
-                                        <h2>Inspect the state of an application</h2>
-                                        <br>
+     
+    <div class= "container2" id="1">
+        <div class="offerings">
+            <nav>
+                <a onClick="document.getElementById('1').scrollIntoView();">Metrics</a>
+                <a onClick="document.getElementById('2').scrollIntoView();">Alerting</a>
+                <a onClick="document.getElementById('3').scrollIntoView();">Debugger</a>
+                <a onClick="document.getElementById('4').scrollIntoView();">Traces</a>
+                <a onClick="document.getElementById('5').scrollIntoView();">Logs</a>
+                <a onClick="document.getElementById('6').scrollIntoView();">Profiler</a>
+            </nav>
+        </div>  
         
-                                        <h2>Snapshots</h2>
-                                        <p>
-                                            Snapshots capture local variables and the call stack at a specific line location in your app's source code. 
-                                        </p>
-                                        <h2>Logpoints</h2>
-                                        <p>
-                                            Logpoints allow you to inject logging into running services without restarting or interfering with the normal function of the service.
-                                        </p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div> 
+        <img src="https://storage.googleapis.com/gweb-cloudblog-publish/original_images/Cloud_Monitoring_dashboard.gif" />
+        <div class="text3black">
+            <h3>Metrics</h3>
+            <br>
+            <br>
+            <h2>Uptime Checks</h2>
+            <p>
+                Health and latency of services, web pages, APIs
+            </p>
+            <h2>Custom Metrics</h2>
+            <p>
+                Application specific metrics (count of returning users)
+            </p>
+            <h2>Log-based Metrics</h2>
+            <p>
+                Content count of certain log entries (count of error logs)
+            </p>
+            <h2>Agent Metrics</h2>
+            <p>
+                Installed onto VMs (AWS as well) for system level metrics.
+            </p>
+            
 
-                      <div class="col" ontouchstart="this.classList.toggle('hover');">
-                        <div class="containerflip">
-                            <div class="front" style="background-image: url(https://bevologyinc.com/blog/wp-content/uploads/2019/01/Metrics-gif.gif)">
-                                <div class="inner">
-                                    <p>Traces</p>
-                      <span>GCP</span>
-                                </div>
-                            </div>
-                            <div class="back">
-                                <div class="inner">
-                                    <br>
-                                    <h2> Flame Graph </h2>
-                                    <br>
-                                    <p>
-                                        Latency data in ms on GCP services. Reveals requests over a timespan, clicking onto the individual requests
-                                        show the underlying Logs
-                                        <br>
-                                        Filter by services or requests to see how latency has chanced over time 
-                                        
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col" ontouchstart="this.classList.toggle('hover');">
-                        <div class="containerflip">
-                            <div class="front" style="background-image: url(https://i.pinimg.com/originals/31/29/46/3129460143a343c72f39adc53ad7fa62.gif)">
-                                <div class="inner">
-                                    <p>Logging</p>
-                      <span>GCP</span>
-                                </div>
-                            </div>
-                            <div class="back">
-                                <div class="inner">
-                                    <h2>Query Builder</h2>
-                                    <p>
-                                        Menu selector to filter by resource, log type, log entry OR
-                                        write queries in query language to filter logs.
-                                    </p>
-                                    <h2>Query Results</h2>
-                                    <p>
-                                        All GCP services are sent to the Cloud Logging API which is then filtered by the Log Router
-                                        to sort the logs in Log Storage, Cloud Storage, BigQuery. Logs are retained by default for 30 days 
-                                        and max for 3650 days.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col" ontouchstart="this.classList.toggle('hover');">
-                        <div class="containerflip">
-                            <div class="front" style="background-image: url(https://developer.android.com/guide/practices/ui_guidelines/images/NB_Icon_Mask_Shapes_Ext_02.gif)">
-                                <div class="inner">
-                                    <p>Profiler</p>
-                      <span>GCP</span>
-                                </div>
-                            </div>
-                            <div class="back">
-                                <div class="inner">
-                                    <h2>Flame Graph</h2>
-                                    <p>
-                                        Similar to debugging, the GCP profiler uses a flame graph to continuously analyze the performance of CPU or memory
-                                        intensive functions executed across an application. Cloud Profiler presents the call hierarchy and resource consumption of the 
-                                        relevant function in an interactive flame graph that helps developers understand which paths consume the most resources and the 
-                                        different ways in which their code is actually called.
+        </div>
+    </div>
 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-           </div>
+    <div class= "container3" id="2">
+        <div class="offerings">
+            <nav>
+                <a onClick="document.getElementById('1').scrollIntoView();">Metrics</a>
+                <a onClick="document.getElementById('2').scrollIntoView();">Alerting</a>
+                <a onClick="document.getElementById('3').scrollIntoView();">Debugger</a>
+                <a onClick="document.getElementById('4').scrollIntoView();">Traces</a>
+                <a onClick="document.getElementById('5').scrollIntoView();">Logs</a>
+                <a onClick="document.getElementById('6').scrollIntoView();">Profiler</a>
+            </nav>
+        </div>
+
+        <img src="https://cache.cloudsteak.com/wp-content/uploads/2020/06/pubsub-lumoPH.gif"/>
+        <div class="text3black">
+            <h3>Alerting</h3>
+            <br>
+            <br>
+            <h2>Alert Policies</h2>
+            <p>
+                Conditions that will generate a notification (documentation, metadata) whenever that event is triggered. 
+            
+        
+            </p>
+            <h2>Error Reporting</h2>
+            <p>
+                Groups together error and critical level errors from application logs. Sends a summary of 
+                what, where, when, and why an incident occurred. Email, PagerDuty, Pub/Sub, SMS, Hipchat, Webhooks, GCP Mobile APP
+
+
+        </div>
+
+
+        </div> 
+    </div>
+
+    <div class= "container4" id="3">
+        <div class="offerings">
+            <nav>
+                <a onClick="document.getElementById('1').scrollIntoView();">Metrics</a>
+                <a onClick="document.getElementById('2').scrollIntoView();">Alerting</a>
+                <a onClick="document.getElementById('3').scrollIntoView();">Debugger</a>
+                <a onClick="document.getElementById('4').scrollIntoView();">Traces</a>
+                <a onClick="document.getElementById('5').scrollIntoView();">Logs</a>
+                <a onClick="document.getElementById('6').scrollIntoView();">Profiler</a>
+            </nav>
+        </div> 
+
+        <img src="https://3.bp.blogspot.com/-zGTV9Wumvh4/WcRfI54uOzI/AAAAAAAAEeQ/beb4d4l-q_EweBDNhlTLaxSHXk2jWchsgCLcBGAs/s1600/debugger_demo3%2B%25281%2529.gif"/>
+        <div class="text3black">
+            <h3>Debugger</h3>
+            <br>
+            <br>
+            <h2>Snapshots</h2>
+            <p>
+                Snapshots capture local variables and the call stack at a specific line location in your app's source code. 
+            </p>
+            <h2>Logpoints</h2>
+            <p>
+                Logpoints allow you to inject logging into running services without restarting or interfering with the normal function of the service.
+            </p>
+        </div>
+        
+    </div>
+
+    <div class= "container5" id="4">
+        <div class="offerings">
+            <nav>
+                <a onClick="document.getElementById('1').scrollIntoView();">Metrics</a>
+                <a onClick="document.getElementById('2').scrollIntoView();">Alerting</a>
+                <a onClick="document.getElementById('3').scrollIntoView();">Debugger</a>
+                <a onClick="document.getElementById('4').scrollIntoView();">Traces</a>
+                <a onClick="document.getElementById('5').scrollIntoView();">Logs</a>
+                <a onClick="document.getElementById('6').scrollIntoView();">Profiler</a>
+            </nav>
+        </div> 
+
+        <img src="https://miro.medium.com/max/1838/1*Ah8YhrEneDbveLVhB-MmQQ.png"/>
+        <div class="text3black">
+            <h3>Traces</h3>
+            <br>
+            <br>
+            <h2> Flame Graph </h2>
+            <p>
+                Latency data in ms on GCP services. Reveals requests over a timespan, clicking onto the individual requests
+                show the underlying Logs.
+                
+                Filter by services or requests to see how latency has chanced over time.
+                
+            </p>
+
+        </div>
+    </div>
+
+    <div class= "container6" id="5">
+        <div class="offerings">
+            <nav>
+                <a onClick="document.getElementById('1').scrollIntoView();">Metrics</a>
+                <a onClick="document.getElementById('2').scrollIntoView();">Alerting</a>
+                <a onClick="document.getElementById('3').scrollIntoView();">Debugger</a>
+                <a onClick="document.getElementById('4').scrollIntoView();">Traces</a>
+                <a onClick="document.getElementById('5').scrollIntoView();">Logs</a>
+                <a onClick="document.getElementById('6').scrollIntoView();">Profiler</a>
+            </nav>
+        </div>
+
+        <img src="https://storage.googleapis.com/gweb-cloudblog-publish/original_images/1_Interactive_queries_with_Log_Fields.gif"/>
+        <div class="text3black">
+            <h3>Logs</h3>
+            <br>
+            <br>
+            <h2>Query Builder</h2>
+            <p>
+                Menu selector query or
+                write queries to filter logs.
+            </p>
+            <h2>Query Results</h2>
+            <p>
+                All GCP services are sent to the Cloud Logging API which is then filtered by the Log Router
+                to sort the logs in Log Storage, Cloud Storage, BigQuery. Logs are retained by default for 30 days 
+                and max for 3650 days.
+            </p>
+   
         </div>
 
     </div>
 
-    <div class="container3" id="3rd">
-        <video autoplay muted loop>
-            <source src="{{ url_for('static', filename='GCP3.mp4') }}" type="video/mp4">
-        </video>
+    <div class="container7" id="6">
+        <div class="offerings">
+            <nav>
+                <a onClick="document.getElementById('1').scrollIntoView();">Metrics</a>
+                <a onClick="document.getElementById('2').scrollIntoView();">Alerting</a>
+                <a onClick="document.getElementById('3').scrollIntoView();">Debugger</a>
+                <a onClick="document.getElementById('4').scrollIntoView();">Traces</a>
+                <a onClick="document.getElementById('5').scrollIntoView();">Logs</a>
+                <a onClick="document.getElementById('6').scrollIntoView();">Profiler</a>
+            </nav>
+        </div> 
+        
+        <img src="https://storage.googleapis.com/gweb-cloudblog-publish/original_images/weight.gif"/>
+        <div class="text3black">
+            <h3>Profiler</h3>
+            <br>
+            <br>
+            <h2>Flame Graph</h2>
+            <p>
+                Presents the call hierarchy and resource consumption of the 
+                relevant function in an interactive flame graph that helps developers understand which paths are most efficient and how applications process.
 
-        <h1 class="text-center">Pricing</h1>
+            </p>
+     
+        </div>
+
+    </div>
+ 
+    <div class="container8" id="3rd">
+
+        <div class="topbox-pricing">
+            <h1>Pricing</h1>
+        </div>
 
         <div class="pricing-box-container">
             <div class="pricing-box text-center">
@@ -248,7 +273,7 @@
             </div>
         
             <div class="pricing-box text-center">
-                <h5>Cloud Logging</h5>
+                <h5>Logging</h5>
 
                 <p class="price"><sup> Ingestion $</sup>0.50<sub>/gb</sub></p>
                 <p class="price"><sup> Storage $</sup>0.01<sub>/gb</sub></p>
@@ -263,7 +288,7 @@
             </div>
         
             <div class="pricing-box text-center">
-                <h5>Cloud Monitoring</h5>
+                <h5>Custom Metrics</h5>
                 <p class="price"><sup>Tier 1 $</sup>0.258<sub>/mb</sub></p>
                 <p class="price"><sup>Tier 2 $</sup>0.151<sub>/mb</sub></p>
                 <p class="price"><sup>Tier 3 $</sup>0.061<sub>/mb</sub></p>
@@ -279,7 +304,7 @@
             </div>
 
             <div class="pricing-box text-center">
-                <h5>Cloud Monitoring API Calls</h5>
+                <h5>API Calls</h5>
                 <p class="price"><sup> $</sup>0.01<sub>/1000 Read API calls</sub></p>
 
                 <ul class="features-list">
@@ -308,9 +333,9 @@
 
     </div>
 
-    <div class="container4" id="4th">
+    <div class="container9" id="4th">
         <video autoplay muted loop>
-            <source src="{{ url_for('static', filename='GCP4.mp4') }}" type="video/mp4">
+            <source src="{{ url_for('static', filename='GCP5.mp4') }}" type="video/mp4">
         </video>
         
         <div class="topbox">
@@ -346,63 +371,57 @@
         </div>
     </div>
 
-    <div class="container5" id="5th">
+    <div class="container10" id="5th">
         <div class="text2">
             
             <h1> so... </h1>
             <h3>Why</h3>
             <h3>Datadog?</h3>
             <p></p>
-            <br>
-            
-
-            <div class="ddogbox">
-                <form>
-                    <span class="text-center2">
-                        
-                        <h1>Agent Installation</h1>
-                        <h2> 
-                            GCP Cloud Monitor requires an installation on the VM similar to Datadog's agent. While GCP can monitor
-                            both hybrid and multi-cloud environments, Datadog has superior granularity.
-                        </h2>
-
-                        <h1>Superior Metrics and Integrations</h1>
-                        <h2>
-                            Datadog has over 50 metrics enabled by default, more metrics can be added with Datadog's application-specific integrations.
-                            Datadog offers more supported integrations than GCP monitor. 
-                
-                        </h2>
-
-                        <h1>No Synthetics or RUM</h1>
-                        <h2>
-                            GCP does not offer any synthetics or Real User Monitoring. They offer debugging and profiling for applications and services, however, they do not
-                            support any front-end monitoring solutions like Datadog. On top of this, Datadog has superior CI/CD monitoring, security, and social aspects on their platform.
-                        </h2>
-
-                        <h1>Superior DevOps Communciation</h1>
-                        <h2>
-                            Datadog offer public invite urls which allows anyone on any team to gain
-                            value from the platform. Datadogs social feed of alerts, incidents, 
-                            and graphs can be shared within the platform and even across Pagerduty, Slack, ServiceNow.
-
-
-                          </h2>
-
-                        <h1>Unified Tagging Structure</h1>
-                        <h2> 
-                            GCP requires a query builder (menu selector and writing queries) to filter through logs. Datadog uses a unified tagging and facet
-                            structure that seamlessly filters through logs and ties them to relevant instances or services. 
-                        </h2>
-
-                        <h1> Superior UI</h1>
-                        <h2> GCP Monitor's dashboards and UI are nothing special. </h2>
-
-
-                    </span>
-
-                </form>	
-            </div>
         </div>
+
+        <div class="ddogbox">
+            <form>
+                <span class="text-center2">
+                    
+                    <h1>Agent Installation</h1>
+                    <h2> 
+                        While GCP can monitor
+                        both hybrid and multi-cloud environments through their agents, 
+                        Datadog has more integrations.
+                    </h2>
+                    <br>
+                    <h1>No Synthetics or RUM</h1>
+                    <h2>
+                        GCP does not offer any synthetics or Real User Monitoring. Limited
+                        support any front-end monitoring solutions like Datadog. 
+                    </h2>
+                    <br>
+                    <h1>Superior DevOps Communciation</h1>
+                    <h2>
+                        Datadog offer public invite urls which allows anyone on any team to gain
+                        value from the platform. Alerts, incidents, 
+                        and graphs can be shared within the platform and even across Pagerduty, Slack, ServiceNow.
+
+
+                    </h2>
+                    <br>
+                    <h1>Unified Tagging Structure</h1>
+                    <h2> 
+                        GCP requires a query builder (menu selector and writing queries) to filter through logs. Datadog uses a unified tagging and facet
+                        structure that seamlessly filters through logs and ties them to relevant instances or services. 
+                    </h2>
+                    <br>
+                    <h1> Superior UI</h1>
+                    <h2> GCP Monitor's dashboards and UI are nothing special. </h2>
+
+
+                </span>
+
+            </form>	
+        </div>        
+        
+
     </div>
 </body>
 

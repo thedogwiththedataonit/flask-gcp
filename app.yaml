@@ -1,0 +1,12 @@
+runtime: python39
+env: flex
+entrypoint: gunicorn -b :$PORT main:application
+
+
+manual_scaling:
+  instances: 4
+resources:
+  cpu: 3
+  memory_gb: 1
+  disk_size_gb: 10
+
